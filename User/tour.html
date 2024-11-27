@@ -11,11 +11,22 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Account-setting-or-edit-profile.css">
     <link rel="stylesheet" href="assets/css/Articles-Cards-images.css">
     <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
     <link rel="stylesheet" href="assets/css/Button-Change-Text-on-Hover.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.5/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/css/theme.bootstrap_4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/Ludens---1-Index-Table-with-Search--Sort-Filters-v20.css">
     <link rel="stylesheet" href="assets/css/Ludens-Client---Login-Dropdown.css">
+    <link rel="stylesheet" href="assets/css/product-details.css">
+    <link rel="stylesheet" href="assets/css/Profile-Edit-Form-styles.css">
+    <link rel="stylesheet" href="assets/css/Profile-Edit-Form.css">
     <link rel="stylesheet" href="assets/css/Search-Field-With-Icon.css">
+    <link rel="stylesheet" href="assets/css/Table-with-search-table.css">
+    <link rel="stylesheet" href="assets/css/Table-with-search.css">
     <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
 </head>
 
@@ -25,11 +36,11 @@
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="features.html">tour</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pricing.html">Theo dõi tour</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about-us.html">trạng thái Yêu cầu</a></li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fa fa-user"></i>&nbsp;</a>
-                        <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" href="#">Thông tin cá nhân</a><a class="dropdown-item link-danger" href="#">Đăng xuất</a></div>
+                    <li class="nav-item"><a class="nav-link active" href="tour.html">tour</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tracking_tour.html">Theo dõi tour</a></li>
+                    <li class="nav-item"><a class="nav-link" href="card_status.html">trạng thái Yêu cầu</a></li>
+                    <li class="nav-item dropdown show"><a class="dropdown-toggle nav-link" aria-expanded="true" data-bs-toggle="dropdown" href="#"><i class="fa fa-user"></i>&nbsp;</a>
+                        <div class="dropdown-menu dropdown-menu-end show" data-bs-popper="none"><a class="dropdown-item" href="personal-info.html">Thông tin cá nhân</a><a class="dropdown-item link-danger" href="login.html">Đăng xuất</a></div>
                     </li>
                 </ul>
             </div>
@@ -38,7 +49,7 @@
     <main class="page">
         <section class="clean-block features">
             <div class="container py-4 py-xl-5">
-                <div class="row mb-5">
+                <div class="row mb-5" style="margin: 57px;">
                     <div class="col-md-8 col-xl-6 text-center mx-auto">
                         <h2>TOUR</h2>
                     </div>
@@ -56,7 +67,7 @@
                                 <h4 class="card-title"><strong>Đà Lạt</strong></h4>
                                 <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
                                 <div class="d-flex">
-                                    <div><button class="button" type="button" data-hover="Chắc chắn!"><span>Xem thêm?</span></button></div>
+                                    <div><button class="button" type="button" data-hover="Chắc chắn!" onclick="window.location.href='view_tour.html'"><span>Xem thêm?</span></button></div>
                                 </div>
                             </div>
                         </div>
@@ -68,7 +79,7 @@
                                 <h4 class="card-title"><strong>Sapa</strong></h4>
                                 <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
                                 <div class="d-flex">
-                                    <div><button class="button" type="button" data-hover="Chắc chắn!"><span>Xem thêm?</span></button></div>
+                                    <div><button class="button" type="button" data-hover="Chắc chắn!" onclick="window.location.href='view_tour.html'">><span>Xem thêm?</span></button></div>
                                 </div>
                             </div>
                         </div>
@@ -80,7 +91,7 @@
                                 <h4 class="card-title"><strong>Nha Trang</strong></h4>
                                 <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
                                 <div class="d-flex">
-                                    <div><button class="button" type="button" data-hover="Chắc chắn!"><span>Xem thêm?</span></button></div>
+                                    <div><button class="button" type="button" data-hover="Chắc chắn!" onclick="window.location.href='view_tour.html'"><span>Xem thêm?</span></button></div>
                                 </div>
                             </div>
                         </div>
@@ -94,7 +105,7 @@
                                 <h4 class="card-title"><strong>Hội An</strong></h4>
                                 <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
                                 <div class="d-flex">
-                                    <div><button class="button" type="button" data-hover="Chắc chắn!"><span>Xem thêm?</span></button></div>
+                                    <div><button class="button" type="button" data-hover="Chắc chắn!" onclick="window.location.href='view_tour.html'"><span>Xem thêm?</span></button></div>
                                 </div>
                             </div>
                         </div>
@@ -106,7 +117,7 @@
                                 <h4 class="card-title"><strong>Quy Nhơn</strong></h4>
                                 <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
                                 <div class="d-flex">
-                                    <div><button class="button" type="button" data-hover="Chắc chắn!"><span>Xem thêm?</span></button></div>
+                                    <div><button class="button" type="button" data-hover="Chắc chắn!" onclick="window.location.href='view_tour.html'"><span>Xem thêm?</span></button></div>
                                 </div>
                             </div>
                         </div>
@@ -118,7 +129,7 @@
                                 <h4 class="card-title"><strong>Sầm Sơn</strong></h4>
                                 <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
                                 <div class="d-flex">
-                                    <div><button class="button" type="button" data-hover="Chắc chắn!"><span>Xem thêm?</span></button></div>
+                                    <div><button class="button" type="button" data-hover="Chắc chắn!" onclick="window.location.href='view_tour.html'"><span>Xem thêm?</span></button></div>
                                 </div>
                             </div>
                         </div>
@@ -184,9 +195,28 @@
         </div>
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.5/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.flash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
     <script src="assets/js/baguetteBox.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.print.min.js"></script>
     <script src="assets/js/vanilla-zoom.js"></script>
+    <script src="assets/js/DataTable---Fully-BSS-Editable-style.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-filter.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-storage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="assets/js/Ludens---1-Index-Table-with-Search--Sort-Filters-v20-Ludens---1-Index-Table-with-Search--Sort-Filters.js"></script>
+    <script src="assets/js/Ludens---1-Index-Table-with-Search--Sort-Filters-v20-Ludens---Material-UI-Actions.js"></script>
+    <script src="assets/js/Profile-Edit-Form-profile.js"></script>
+    <script src="assets/js/Table-with-search-table.js"></script>
 </body>
 
 </html>
