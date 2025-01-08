@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/Profile-Edit-Form-styles.css">
     <link rel="stylesheet" href="assets/css/Profile-Edit-Form.css">
+    <link rel="stylesheet" href="assets/css/textarea.css">
     <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="assets/css/x-dropdown.css">
 </head>
 
 <body id="page-top">
@@ -26,10 +28,14 @@
                 <ul class="navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
                     <li class="nav-item"></li>
-                    <li class="nav-item"><a class="nav-link" href="tour.html"><i class="fa fa-th-list"></i><span><strong>Quản lý Tour</strong></span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="book_tour.html"><i class="fa fa-th-list"></i><span><strong>Quản lý đặt Tour</strong></span></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="user_account.html"><i class="fa fa-th-list"></i><span><strong>Quản lý người dùng</strong></span></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="user_account.html"><i class="fa fa-th-list"></i><span><strong>Quản lý nhân viên</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="tour.html"><i class="fa fa-th-list"></i><span><strong>Tour management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="book_tour.html"><i class="fa fa-th-list"></i><span><strong>Request management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="user_account.html"><i class="fa fa-th-list"></i><span><strong>User management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="employee.html"><i class="fa fa-th-list"></i><span><strong>Employee management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="report.html"><i class="fa fa-th-list"></i><span><strong>Report management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="location.html"><i class="fa fa-th-list"></i><span><strong>Location management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="vehicle.html"><i class="fa fa-th-list"></i><span><strong>Vehicle management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="extra.html"><i class="fa fa-th-list"></i><span><strong>Extra Service</strong></span></a></li>
                 </ul>
                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
             </div>
@@ -129,7 +135,7 @@
                     </div>
                 </nav>
                 <div class="container-fluid">
-                    <h3 class="text-dark mb-4">Quản lý người dùng</h3>
+                    <h3 class="text-dark mb-4">User management</h3>
                     <div class="card shadow">
                         <div class="card-header py-3"></div>
                         <div class="card-body">
@@ -168,64 +174,80 @@
                                             <th>Username</th>
                                             <th>Full name</th>
                                             <th>Email</th>
-                                            <th>Account Status</th>
+                                            <th>Phone</th>
+                                            <th>Status</th>
+                                            <th>Created at</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>ID123456</td>
-                                            <td>Đà Lạt</td>
-                                            <td>Active</td>
-                                            <td>2008/11/28</td>
+                                            <td>abc123</td>
+                                            <td>Nguyễn Văn A</td>
+                                            <td>abc@gmail.com</td>
+                                            <td>0123456789</td>
+                                            <td style="color: var(--bs-primary);">Active</td>
                                             <td>2008/11/28</td>
                                             <td style="width: 241.013px;"><button class="btn btn-danger form-btn" type="reset">DELETE</button><button class="btn btn-primary form-btn" onclick="&quot;window.location.href=&#39;edit_tour.html&#39;&quot;"><a href="edit_user.html" style="color: white;">EDIT</a></button></td>
                                         </tr>
                                         <tr>
                                             <td>ID123456</td>
-                                            <td>Đà Lạt</td>
-                                            <td>Active</td>
-                                            <td>2008/11/28</td>
+                                            <td>abc123</td>
+                                            <td>Nguyễn Văn A</td>
+                                            <td>abc@gmail.com</td>
+                                            <td>0123456789</td>
+                                            <td style="color: var(--bs-warning);">Suspended</td>
                                             <td>2009/10/09<br></td>
                                             <td style="width: 241.013px;"><button class="btn btn-danger form-btn" type="reset">DELETE</button><button class="btn btn-primary form-btn" onclick="&quot;window.location.href=&#39;edit_tour.html&#39;&quot;"><a href="edit_user.html" style="color: white;">EDIT</a></button></td>
                                         </tr>
                                         <tr>
                                             <td>ID123456</td>
-                                            <td>Đà Lạt</td>
-                                            <td>Active</td>
-                                            <td>2008/11/28</td>
+                                            <td>abc123</td>
+                                            <td>Nguyễn Văn A</td>
+                                            <td>abc@gmail.com</td>
+                                            <td>0123456789</td>
+                                            <td style="color: var(--bs-danger);">Banned</td>
                                             <td>2009/01/12<br></td>
                                             <td style="width: 241.013px;"><button class="btn btn-danger form-btn" type="reset"><span style="background-color: rgb(196, 63, 50);">DELETE</span></button><button class="btn btn-primary form-btn" onclick="&quot;window.location.href=&#39;edit_tour.html&#39;&quot;"><a href="edit_user.html" style="color: white;">EDIT</a></button></td>
                                         </tr>
                                         <tr>
                                             <td>ID123456</td>
-                                            <td>Đà Lạt</td>
-                                            <td>Active</td>
-                                            <td>2008/11/28</td>
+                                            <td>abc123</td>
+                                            <td>Nguyễn Văn A</td>
+                                            <td>abc@gmail.com</td>
+                                            <td>0123456789</td>
+                                            <td style="color: darkgoldenrod;">Pending Deletion</td>
                                             <td>2012/10/13<br></td>
                                             <td style="width: 241.013px;"><button class="btn btn-danger form-btn" type="reset"><span style="background-color: rgb(196, 63, 50);">DELETE</span></button><button class="btn btn-primary form-btn" onclick="&quot;window.location.href=&#39;edit_tour.html&#39;&quot;"><a href="edit_user.html" style="color: white;">EDIT</a></button></td>
                                         </tr>
                                         <tr>
                                             <td>ID123456</td>
-                                            <td>Đà Lạt</td>
-                                            <td>Active</td>
-                                            <td>2008/11/28</td>
+                                            <td>abc123</td>
+                                            <td>Nguyễn Văn A</td>
+                                            <td>abc@gmail.com</td>
+                                            <td>0123456789</td>
+                                            <td style="color: #8e888a;">Deleted</td>
                                             <td>2011/06/07<br></td>
                                             <td style="width: 241.013px;"><button class="btn btn-danger form-btn" type="reset">DELETE</button><button class="btn btn-primary form-btn" onclick="&quot;window.location.href=&#39;edit_tour.html&#39;&quot;"><a href="edit_user.html" style="color: white;">EDIT</a></button></td>
                                         </tr>
                                         <tr>
                                             <td>ID123456</td>
-                                            <td>Đà Lạt</td>
-                                            <td>Active</td>
-                                            <td>2008/11/28</td>
+                                            <td>abc123</td>
+                                            <td>Nguyễn Văn A</td>
+                                            <td>abc@gmail.com</td>
+                                            <td>0123456789</td>
+                                            <td style="color: var(--bs-primary);">Active</td>
                                             <td>2012/12/02<br></td>
                                             <td style="width: 241.013px;"><button class="btn btn-danger form-btn" type="reset">DELETE</button><button class="btn btn-primary form-btn" onclick="&quot;window.location.href=&#39;edit_tour.html&#39;&quot;"><a href="edit_user.html" style="color: white;">EDIT</a></button></td>
                                         </tr>
                                         <tr>
                                             <td>ID123456</td>
-                                            <td>Đà Lạt</td>
-                                            <td>Active</td>
-                                            <td>2008/11/28</td>
+                                            <td>abc123</td>
+                                            <td>Nguyễn Văn A</td>
+                                            <td>abc@gmail.com</td>
+                                            <td>0123456789</td>
+                                            <td style="color: var(--bs-primary);">Active</td>
                                             <td>2011/05/03<br></td>
                                             <td style="width: 241.013px;"><button class="btn btn-danger form-btn" type="reset">DELETE</button><button class="btn btn-primary form-btn" onclick="&quot;window.location.href=&#39;edit_tour.html&#39;&quot;"><a href="edit_user.html" style="color: white;">EDIT</a></button></td>
                                         </tr>
@@ -236,7 +258,9 @@
                                             <td><strong>Username</strong></td>
                                             <td><strong>Full name</strong></td>
                                             <td><strong>Email</strong></td>
-                                            <td><strong>Account status</strong></td>
+                                            <td><strong>Phone</strong></td>
+                                            <td><strong>Status</strong></td>
+                                            <td><strong>Created at</strong></td>
                                             <td><strong>Action</strong></td>
                                         </tr>
                                     </tfoot>

@@ -9,10 +9,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/Profile-Edit-Form-styles.css">
     <link rel="stylesheet" href="assets/css/Profile-Edit-Form.css">
+    <link rel="stylesheet" href="assets/css/textarea.css">
     <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="assets/css/x-dropdown.css">
 </head>
 
 <body id="page-top">
@@ -26,10 +29,14 @@
                 <ul class="navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
                     <li class="nav-item"></li>
-                    <li class="nav-item"><a class="nav-link" href="tour.html"><i class="fa fa-th-list"></i><span><strong>Quản lý Tour</strong></span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="book_tour.html"><i class="fa fa-th-list"></i><span><strong>Quản lý đặt Tour</strong></span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="user_account.html"><i class="fa fa-th-list"></i><span><strong>Quản lý người dùng</strong></span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="user_account.html"><i class="fa fa-th-list"></i><span><strong>Quản lý nhân viên</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="tour.html"><i class="fa fa-th-list"></i><span><strong>Tour management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="book_tour.html"><i class="fa fa-th-list"></i><span><strong>Request management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="user_account.html"><i class="fa fa-th-list"></i><span><strong>User management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="employee.html"><i class="fa fa-th-list"></i><span><strong>Employee management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="report.html"><i class="fa fa-th-list"></i><span><strong>Report management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="location.html"><i class="fa fa-th-list"></i><span><strong>Location management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="vehicle.html"><i class="fa fa-th-list"></i><span><strong>Vehicle management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="extra.html"><i class="fa fa-th-list"></i><span><strong>Extra Service</strong></span></a></li>
                 </ul>
                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
             </div>
@@ -134,13 +141,13 @@
                         <div class="col-lg-4">
                             <div class="card mb-3">
                                 <div class="card-body text-center shadow"><img class="rounded-circle mb-3 mt-4" src="assets/img/dogs/image2.jpeg" width="160" height="160">
-                                    <div class="mb-3"><button class="btn btn-primary btn-sm" type="button">Thay đổi ảnh</button></div>
+                                    <div class="mb-3"><button class="btn btn-primary btn-sm" type="button">Change image</button></div>
                                 </div>
                             </div>
                             <div class="mb-3">
                                 <div class="row">
-                                    <div class="col"><button class="btn btn-primary btn-sm" type="submit">Lưu thay đổi</button></div>
-                                    <div class="col"><button class="btn btn-primary btn-sm" type="submit">Quay lại</button></div>
+                                    <div class="col"><button class="btn btn-primary btn-sm" type="submit">Save</button></div>
+                                    <div class="col"><button class="btn btn-primary btn-sm" type="submit" style="width: 131.1625px;">Back</button></div>
                                 </div>
                             </div>
                         </div>
@@ -179,21 +186,80 @@
                                 <div class="col">
                                     <div class="card shadow mb-3">
                                         <div class="card-header py-3">
-                                            <p class="text-primary m-0 fw-bold">Thông tin về tour</p>
+                                            <p class="text-primary m-0 fw-bold">Tour info</p>
                                         </div>
                                         <div class="card-body">
                                             <form>
                                                 <div class="row">
                                                     <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="username"><strong>ID</strong></label><input class="form-control" type="text" id="username-1" placeholder="user.name" name="username"></div>
+                                                        <div class="mb-3"><label class="form-label" for="username"><strong>ID</strong></label><input class="form-control" type="text" id="username-1" placeholder="" name="username"></div>
                                                     </div>
                                                     <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="email-1"><strong>Status</strong></label><input class="form-control" type="email" id="email-1" placeholder="user@example.com" name="email"></div>
+                                                        <div class="mb-3"><label class="form-label" for="email-1"><strong>Status</strong></label><input class="form-control" type="email" id="email-1" placeholder="" name="email"></div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="first_name"><strong>Title</strong></label><input class="form-control" type="text" id="first_name" placeholder="John" name="first_name"></div>
+                                                        <div class="mb-3"><label class="form-label" for="first_name"><strong>Title</strong></label><input class="form-control" type="text" id="first_name" placeholder="" name="first_name"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="mb-3"><label class="form-label" for="first_name-2"><strong>List tour guide</strong></label>
+                                                            <div class="x-dropdown dropdown">
+                                                                <div class="text-start x-drop-btn" aria-expanded="false" data-bs-toggle="dropdown"><span>ID123456</span><i class="material-icons">keyboard_arrow_down</i></div>
+                                                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">xxxxx1</a><a class="dropdown-item" role="presentation" href="#">xxxx2</a><a class="dropdown-item" role="presentation" href="#">xxxxxx3</a></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="mb-3"><label class="form-label" for="username"><strong>Day length</strong></label><input class="form-control" type="text" id="username-2" placeholder="" name="username"></div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="mb-3"><label class="form-label" for="email-2"><strong>Night length</strong></label><input class="form-control" type="email" id="email-2" placeholder="" name="email"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="mb-3"><label class="form-label" for="first_name-1"><strong>Cancel fee</strong></label><input class="form-control" type="text" id="first_name-1" placeholder="" name="first_name"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="mb-3"><label class="form-label" for="first_name-2"><strong>Highlights</strong></label>
+                                                            <form>
+                                                                <div class="field"><textarea class="form-control" name="float-textarea" style="border: 0; border-bottom: 1px solid #E0E0E0;" placeholder=" "></textarea></div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="mb-3"><label class="form-label" for="first_name-2"><strong>Price detail</strong></label>
+                                                            <form>
+                                                                <div class="field"><textarea class="form-control" name="float-textarea" style="border: 0; border-bottom: 1px solid #E0E0E0;" placeholder=" "></textarea></div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="mb-3"><label class="form-label" for="first_name-2"><strong>Schedule detail</strong></label>
+                                                            <form>
+                                                                <div class="field"><textarea class="form-control" name="float-textarea" style="border: 0; border-bottom: 1px solid #E0E0E0;" placeholder=" "></textarea></div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="mb-3"><label class="form-label" for="first_name-2"><strong>Registry policy</strong></label>
+                                                            <form>
+                                                                <div class="field"><textarea class="form-control" name="float-textarea" style="border: 0; border-bottom: 1px solid #E0E0E0;" placeholder=" "></textarea></div>
+                                                            </form>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
@@ -209,11 +275,16 @@
                                     </div>
                                     <div class="card shadow">
                                         <div class="card-header py-3">
-                                            <p class="text-primary m-0 fw-bold">Chi tiết tour</p>
+                                            <p class="text-primary m-0 fw-bold">Tour locations</p>
                                         </div>
                                         <div class="card-body">
                                             <form>
-                                                <div class="mb-3"><label class="form-label" for="address"><strong>Địa điểm</strong></label><input class="form-control" type="text" id="address" placeholder="Sunset Blvd, 38" name="address"></div>
+                                                <div class="mb-3"><label class="form-label" for="address">Departure place</label>
+                                                    <div class="x-dropdown dropdown">
+                                                        <div class="text-start x-drop-btn" aria-expanded="false" data-bs-toggle="dropdown"><span>Công viên nước*</span><i class="material-icons">keyboard_arrow_down</i></div>
+                                                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">xxxxx1</a><a class="dropdown-item" role="presentation" href="#">xxxx2</a><a class="dropdown-item" role="presentation" href="#">xxxxxx3</a></div>
+                                                    </div>
+                                                </div>
                                                 <div class="row">
                                                     <div class="col">
                                                         <div class="mb-3"><label class="form-label" for="username"><strong>Start time</strong></label><input class="form-control" type="date"></div>
@@ -224,7 +295,12 @@
                                                 </div>
                                             </form>
                                             <form>
-                                                <div class="mb-3"><label class="form-label" for="address-1"><strong>Địa điểm</strong></label><input class="form-control" type="text" id="address-1" placeholder="Sunset Blvd, 38" name="address"></div>
+                                                <div class="mb-3"><label class="form-label" for="address-1">Destination</label>
+                                                    <div class="x-dropdown dropdown">
+                                                        <div class="text-start x-drop-btn" aria-expanded="false" data-bs-toggle="dropdown"><span>Công viên nước*</span><i class="material-icons">keyboard_arrow_down</i></div>
+                                                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">xxxxx1</a><a class="dropdown-item" role="presentation" href="#">xxxx2</a><a class="dropdown-item" role="presentation" href="#">xxxxxx3</a></div>
+                                                    </div>
+                                                </div>
                                                 <div class="row">
                                                     <div class="col">
                                                         <div class="mb-3"><label class="form-label" for="username"><strong>Start time</strong></label><input class="form-control" type="date"></div>
@@ -234,8 +310,87 @@
                                                     </div>
                                                 </div>
                                             </form>
-                                            <div class="mb-3"><button class="btn btn-primary btn-sm" type="submit">Thêm lịch trình</button></div>
                                         </div>
+                                    </div>
+                                    <div class="card shadow">
+                                        <div class="card-header py-3">
+                                            <p class="text-primary m-0 fw-bold">Tour transportation</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <form>
+                                                <div class="mb-3"><label class="form-label" for="address">Vehicle</label>
+                                                    <div class="x-dropdown dropdown">
+                                                        <div class="text-start x-drop-btn" aria-expanded="false" data-bs-toggle="dropdown"><span>Xe buýt</span><i class="material-icons">keyboard_arrow_down</i></div>
+                                                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">xxxxx1</a><a class="dropdown-item" role="presentation" href="#">xxxx2</a><a class="dropdown-item" role="presentation" href="#">xxxxxx3</a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="mb-3"><label class="form-label" for="username"><strong>Start time</strong></label><input class="form-control" type="date"></div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="mb-3"><label class="form-label" for="email"><strong>End time</strong></label><input class="form-control" type="date"></div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <form>
+                                                <div class="mb-3"><label class="form-label" for="address-1">Vehicle</label>
+                                                    <div class="x-dropdown dropdown">
+                                                        <div class="text-start x-drop-btn" aria-expanded="false" data-bs-toggle="dropdown"><span>Xe 50 chỗ</span><i class="material-icons">keyboard_arrow_down</i></div>
+                                                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">xxxxx1</a><a class="dropdown-item" role="presentation" href="#">xxxx2</a><a class="dropdown-item" role="presentation" href="#">xxxxxx3</a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="mb-3"><label class="form-label" for="username"><strong>Start time</strong></label><input class="form-control" type="date"></div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="mb-3"><label class="form-label" for="email"><strong>End time</strong></label><input class="form-control" type="date"></div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="mb-3"><button class="btn btn-primary btn-sm" type="submit">Add vehicle</button></div>
+                                    </div>
+                                    <div class="card shadow">
+                                        <div class="card-header py-3">
+                                            <p class="text-primary m-0 fw-bold">Tour extra service</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <form>
+                                                <div class="mb-3"><label class="form-label" for="address">Service</label>
+                                                    <div class="x-dropdown dropdown">
+                                                        <div class="text-start x-drop-btn" aria-expanded="false" data-bs-toggle="dropdown"><span>Tắm khoáng</span><i class="material-icons">keyboard_arrow_down</i></div>
+                                                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">xxxxx1</a><a class="dropdown-item" role="presentation" href="#">xxxx2</a><a class="dropdown-item" role="presentation" href="#">xxxxxx3</a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="mb-3"><label class="form-label" for="username"><strong>Start time</strong></label><input class="form-control" type="date"></div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="mb-3"><label class="form-label" for="email"><strong>End time</strong></label><input class="form-control" type="date"></div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <form>
+                                                <div class="mb-3"><label class="form-label" for="address-1">Service</label>
+                                                    <div class="x-dropdown dropdown">
+                                                        <div class="text-start x-drop-btn" aria-expanded="false" data-bs-toggle="dropdown"><span>Thuê sân bóng</span><i class="material-icons">keyboard_arrow_down</i></div>
+                                                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">xxxxx1</a><a class="dropdown-item" role="presentation" href="#">xxxx2</a><a class="dropdown-item" role="presentation" href="#">xxxxxx3</a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="mb-3"><label class="form-label" for="username"><strong>Start time</strong></label><input class="form-control" type="date"></div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="mb-3"><label class="form-label" for="email"><strong>End time</strong></label><input class="form-control" type="date"></div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="mb-3"><button class="btn btn-primary btn-sm" type="submit">Add service</button></div>
                                     </div>
                                 </div>
                             </div>

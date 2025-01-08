@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/Profile-Edit-Form-styles.css">
     <link rel="stylesheet" href="assets/css/Profile-Edit-Form.css">
+    <link rel="stylesheet" href="assets/css/textarea.css">
     <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="assets/css/x-dropdown.css">
 </head>
 
 <body id="page-top">
@@ -26,10 +28,14 @@
                 <ul class="navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
                     <li class="nav-item"></li>
-                    <li class="nav-item"><a class="nav-link" href="tour.html"><i class="fa fa-th-list"></i><span><strong>Quản lý Tour</strong></span></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="book_tour.html"><i class="fa fa-th-list"></i><span><strong>Quản lý đặt Tour</strong></span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="user_account.html"><i class="fa fa-th-list"></i><span><strong>Quản lý người dùng</strong></span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="user_account.html"><i class="fa fa-th-list"></i><span><strong>Quản lý nhân viên</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="tour.html"><i class="fa fa-th-list"></i><span><strong>Tour management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="book_tour.html"><i class="fa fa-th-list"></i><span><strong>Request management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="user_account.html"><i class="fa fa-th-list"></i><span><strong>User management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="employee.html"><i class="fa fa-th-list"></i><span><strong>Employee management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="report.html"><i class="fa fa-th-list"></i><span><strong>Report management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="location.html"><i class="fa fa-th-list"></i><span><strong>Location management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="vehicle.html"><i class="fa fa-th-list"></i><span><strong>Vehicle management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="extra.html"><i class="fa fa-th-list"></i><span><strong>Extra Service</strong></span></a></li>
                 </ul>
                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
             </div>
@@ -129,7 +135,7 @@
                     </div>
                 </nav>
                 <div class="container-fluid">
-                    <h3 class="text-dark mb-4">Quản lý đặt Tour</h3>
+                    <h3 class="text-dark mb-4">Request management</h3>
                     <div class="card shadow">
                         <div class="card-header py-3"></div>
                         <div class="card-body">
@@ -165,9 +171,11 @@
                                     <thead>
                                         <tr>
                                             <th>ID Request</th>
-                                            <th>ID User</th>
-                                            <th>ID Employee</th>
-                                            <th>Request time</th>
+                                            <th>Customer name</th>
+                                            <th>Customer email</th>
+                                            <th>ID Saler</th>
+                                            <th>Created at</th>
+                                            <th>Updated at</th>
                                             <th>Status</th>
                                             <th>Action</th>
                                         </tr>
@@ -175,67 +183,83 @@
                                     <tbody>
                                         <tr>
                                             <td>ID123456</td>
-                                            <td>ID123456</td>
-                                            <td>ID123456</td>
+                                            <td>Nguyễn Văn A</td>
+                                            <td>abc@gmail.com</td>
+                                            <td>undefined</td>
                                             <td>2008/11/28</td>
-                                            <td>Handling</td>
+                                            <td>2008/11/28</td>
+                                            <td style="color: var(--bs-warning);">Pending</td>
                                             <td style="width: 241.013px;"><button class="btn btn-danger form-btn" type="reset">DELETE</button><button class="btn btn-primary form-btn" onclick="&quot;window.location.href=&#39;edit_tour.html&#39;&quot;"><a href="edit_request.html" style="color: white;">EDIT</a></button></td>
                                         </tr>
                                         <tr>
                                             <td>ID123456</td>
-                                            <td>ID123456</td>
+                                            <td>Nguyễn Văn A</td>
+                                            <td>abc@gmail.com</td>
                                             <td>ID123456</td>
                                             <td>2008/11/28</td>
-                                            <td>Handling</td>
+                                            <td>2008/11/28</td>
+                                            <td style="color: var(--bs-primary);">Assigned</td>
                                             <td style="width: 241.013px;"><button class="btn btn-danger form-btn" type="reset">DELETE</button><button class="btn btn-primary form-btn" onclick="&quot;window.location.href=&#39;edit_tour.html&#39;&quot;"><a href="edit_request.html" style="color: white;">EDIT</a></button></td>
                                         </tr>
                                         <tr>
                                             <td>ID123456</td>
-                                            <td>ID123456</td>
-                                            <td>ID123456</td>
+                                            <td>Nguyễn Văn A</td>
+                                            <td>abc@gmail.com</td>
+                                            <td>undefined</td>
                                             <td>2008/11/28</td>
-                                            <td>Handling</td>
+                                            <td>2008/11/28</td>
+                                            <td style="color: var(--bs-warning);">Pending</td>
                                             <td style="width: 241.013px;"><button class="btn btn-danger form-btn" type="reset"><span style="background-color: rgb(196, 63, 50);">DELETE</span></button><button class="btn btn-primary form-btn" onclick="&quot;window.location.href=&#39;edit_tour.html&#39;&quot;"><a href="edit_request.html" style="color: white;">EDIT</a></button></td>
                                         </tr>
                                         <tr>
                                             <td>ID123456</td>
-                                            <td>ID123456</td>
+                                            <td>Nguyễn Văn A</td>
+                                            <td>abc@gmail.com</td>
                                             <td>ID123456</td>
                                             <td>2008/11/28</td>
-                                            <td>Handling</td>
+                                            <td>2008/11/28</td>
+                                            <td style="color: var(--bs-pink);">Consulting&nbsp;</td>
                                             <td style="width: 241.013px;"><button class="btn btn-danger form-btn" type="reset"><span style="background-color: rgb(196, 63, 50);">DELETE</span></button><button class="btn btn-primary form-btn" onclick="&quot;window.location.href=&#39;edit_tour.html&#39;&quot;"><a href="edit_request.html" style="color: white;">EDIT</a></button></td>
                                         </tr>
                                         <tr>
                                             <td>ID123456</td>
-                                            <td>ID123456</td>
+                                            <td>Nguyễn Văn A</td>
+                                            <td>abc@gmail.com</td>
                                             <td>ID123456</td>
                                             <td>2008/11/28</td>
-                                            <td>Handling</td>
+                                            <td>2008/11/28</td>
+                                            <td style="color: var(--bs-success);">Success</td>
                                             <td style="width: 241.013px;"><button class="btn btn-danger form-btn" type="reset">DELETE</button><button class="btn btn-primary form-btn" onclick="&quot;window.location.href=&#39;edit_tour.html&#39;&quot;"><a href="edit_request.html" style="color: white;">EDIT</a></button></td>
                                         </tr>
                                         <tr>
                                             <td>ID123456</td>
-                                            <td>ID123456</td>
+                                            <td>Nguyễn Văn A</td>
+                                            <td>abc@gmail.com</td>
                                             <td>ID123456</td>
                                             <td>2008/11/28</td>
-                                            <td>Handling</td>
+                                            <td>2008/11/28</td>
+                                            <td style="color: var(--bs-danger);">Cancelled</td>
                                             <td style="width: 241.013px;"><button class="btn btn-danger form-btn" type="reset">DELETE</button><button class="btn btn-primary form-btn" onclick="&quot;window.location.href=&#39;edit_tour.html&#39;&quot;"><a href="edit_request.html" style="color: white;">EDIT</a></button></td>
                                         </tr>
                                         <tr>
                                             <td>ID123456</td>
-                                            <td>ID123456</td>
-                                            <td>ID123456</td>
+                                            <td>Nguyễn Văn A</td>
+                                            <td>abc@gmail.com</td>
+                                            <td>undefined</td>
                                             <td>2008/11/28</td>
-                                            <td>Handling</td>
+                                            <td>2008/11/28</td>
+                                            <td style="color: var(--bs-warning);">Pending</td>
                                             <td style="width: 241.013px;"><button class="btn btn-danger form-btn" type="reset">DELETE</button><button class="btn btn-primary form-btn" onclick="&quot;window.location.href=&#39;edit_tour.html&#39;&quot;"><a href="edit_request.html" style="color: white;">EDIT</a></button></td>
                                         </tr>
                                     </tbody>
                                     <tfoot>
                                         <tr>
                                             <td><strong>ID Request</strong></td>
-                                            <td><strong>ID User</strong></td>
-                                            <td><strong>ID Employee</strong></td>
-                                            <td><strong>Request time</strong></td>
+                                            <td><strong>Customer name</strong></td>
+                                            <td><strong>Customer email</strong></td>
+                                            <td><strong>ID Saler</strong></td>
+                                            <td><strong>Created at</strong></td>
+                                            <td><strong>Updated at</strong></td>
                                             <td><strong>Status</strong></td>
                                             <td><strong>Action</strong></td>
                                         </tr>

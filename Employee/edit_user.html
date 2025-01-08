@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/Profile-Edit-Form-styles.css">
     <link rel="stylesheet" href="assets/css/Profile-Edit-Form.css">
+    <link rel="stylesheet" href="assets/css/textarea.css">
     <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="assets/css/x-dropdown.css">
 </head>
 
 <body id="page-top">
@@ -26,10 +28,14 @@
                 <ul class="navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
                     <li class="nav-item"></li>
-                    <li class="nav-item"><a class="nav-link" href="tour.html"><i class="fa fa-th-list"></i><span><strong>Quản lý Tour</strong></span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="book_tour.html"><i class="fa fa-th-list"></i><span><strong>Quản lý đặt Tour</strong></span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="user_account.html"><i class="fa fa-th-list"></i><span><strong>Quản lý người dùng</strong></span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="user_account.html"><i class="fa fa-th-list"></i><span><strong>Quản lý nhân viên</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="tour.html"><i class="fa fa-th-list"></i><span><strong>Tour management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="book_tour.html"><i class="fa fa-th-list"></i><span><strong>Request management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="user_account.html"><i class="fa fa-th-list"></i><span><strong>User management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="employee.html"><i class="fa fa-th-list"></i><span><strong>Employee management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="report.html"><i class="fa fa-th-list"></i><span><strong>Report management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="location.html"><i class="fa fa-th-list"></i><span><strong>Location management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="vehicle.html"><i class="fa fa-th-list"></i><span><strong>Vehicle management</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="extra.html"><i class="fa fa-th-list"></i><span><strong>Extra Service</strong></span></a></li>
                 </ul>
                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
             </div>
@@ -129,7 +135,7 @@
                     </div>
                 </nav>
                 <div class="container-fluid">
-                    <h3 class="text-dark mb-4">Người dùng</h3>
+                    <h3 class="text-dark mb-4">User</h3>
                     <div class="row mb-3">
                         <div class="col-lg-4">
                             <div class="card mb-3">
@@ -179,42 +185,45 @@
                                 <div class="col">
                                     <div class="card shadow mb-3">
                                         <div class="card-header py-3">
-                                            <p class="text-primary m-0 fw-bold">Thông tin người dùng</p>
+                                            <p class="text-primary m-0 fw-bold">User info</p>
                                         </div>
                                         <div class="card-body">
                                             <form>
                                                 <div class="row">
                                                     <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="username"><strong>ID</strong></label><input class="form-control" type="text" id="username-1" placeholder="user.name" name="username"></div>
+                                                        <div class="mb-3"><label class="form-label" for="username"><strong>ID</strong></label><input class="form-control" type="text" id="username-1" placeholder="" name="username"></div>
                                                     </div>
                                                     <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="first_name-3"><strong>Username</strong></label><input class="form-control" type="text" id="first_name-3" placeholder="John" name="first_name"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="first_name"><strong>Họ và tên</strong></label><input class="form-control" type="text" id="first_name" placeholder="John" name="first_name"></div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="first_name-1"><strong>Số điện thoại</strong></label><input class="form-control" type="text" id="first_name-1" placeholder="John" name="first_name"></div>
+                                                        <div class="mb-3"><label class="form-label" for="first_name-3"><strong>Username</strong></label><input class="form-control" type="text" id="first_name-3" placeholder="" name="first_name"></div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="email-2"><strong>Email</strong></label><input class="form-control" type="email" id="email-2" placeholder="user@example.com" name="email"></div>
+                                                        <div class="mb-3"><label class="form-label" for="first_name"><strong>Full name</strong></label><input class="form-control" type="text" id="first_name" placeholder="" name="first_name"></div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="mb-3"><label class="form-label" for="first_name-1"><strong>Phone</strong></label><input class="form-control" type="text" id="first_name-1" placeholder="" name="first_name"></div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="first_name"><strong>Địa chỉ</strong></label><input class="form-control" type="text" id="first_name-2" placeholder="John" name="first_name"></div>
+                                                        <div class="mb-3"><label class="form-label" for="email-2"><strong>Email</strong></label><input class="form-control" type="email" id="email-2" placeholder="" name="email"></div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="username"><strong>Ngày sinh</strong></label><input class="form-control" type="date"></div>
+                                                        <div class="mb-3"><label class="form-label" for="first_name"><strong>Address</strong></label><input class="form-control" type="text" id="first_name-2" placeholder="" name="first_name"></div>
                                                     </div>
                                                     <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="username"><strong>Trạng thái</strong></label><select class="form-select">
+                                                        <div class="mb-3"><label class="form-label" for="first_name"><strong>Status</strong></label><input class="form-control" type="text" id="first_name-4" placeholder="" name="first_name"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="mb-3"><label class="form-label" for="username"><strong>Created at</strong></label><input class="form-control" type="date"></div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="mb-3"><label class="form-label" for="username"><strong>Deleted at</strong></label><select class="form-select">
                                                                 <optgroup label="This is a group">
                                                                     <option value="12" selected="">This is item 1</option>
                                                                     <option value="13">This is item 2</option>
